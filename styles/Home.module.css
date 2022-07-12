@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  padding: 0 20px;
 }
 
 .main {
@@ -23,25 +24,26 @@
   align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.footer p {
+  text-align: center;
 }
 
 .mandlTitle {
   letter-spacing: 10px;
   font-size: 60px;
-  margin-bottom: 0;
+  margin-bottom: -30px;
+  padding-bottom: 0;
 }
 
 .pitchTitle {
   font-family: 'Dancing Script', cursive;
   font-size: 150px;
   margin-top: 0;
+  padding-top: 0;
   margin-bottom: 0px;
   color: #d35b61;
+  position: absolute;
+  top: 0;
 }
 
 .pitchRocketContainer {
@@ -49,12 +51,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200;
+  height: 400px;
+  width: 500px;
 }
 
-.rocket {
-  position: absolute;
-  top: 0;
+.rocketContainer {
+  position: absolute !important;
+  top: 60px !important;
 }
 
 .description {

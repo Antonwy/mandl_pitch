@@ -18,20 +18,23 @@ const Home: NextPage = () => {
 
         <div className={styles.pitchRocketContainer}>
           <h1 className={styles.pitchTitle}>Pitch</h1>
-
-          <Image
-            src={rocketImg}
-            alt="Picture of a rocket"
-            height={500}
-            objectFit="contain"
-            className={styles.rocket}
-          />
+          <div className={styles.rocketContainer}>
+            <Image
+              src={rocketImg}
+              alt="Picture of a rocket"
+              height={800}
+              objectFit="contain"
+            />
+          </div>
         </div>
 
         <p className={styles.description}>
-          Transforming society and shaping progress through collaboration.
-          Inspiring, fascinating, impactful, pitches meet challenging questions.
-          Pitch your idea. Pitch the future!🔮
+          Transforming <b>society</b> and shaping<br></br>
+          <b>progress</b> through collaboration.<br></br>
+          <b>Inspiring</b>, <b>fascinating</b>, <b>impactful</b>,<br></br>
+          pitches meet challenging questions.<br></br>
+          Pitch your idea.<br></br>
+          <b>Pitch the future!🔮</b>
         </p>
       </main>
 
