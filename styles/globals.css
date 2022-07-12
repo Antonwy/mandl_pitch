@@ -1,14 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f4f4fc;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1 {
+  color: #636dd5;
+}
+
+p {
+  color: #636dd5;
 }
 
 * {
