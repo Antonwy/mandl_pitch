@@ -29,7 +29,7 @@
 }
 
 .mandlTitle {
-  letter-spacing: 10px;
+  letter-spacing: 15px;
   font-size: 60px;
   margin-bottom: -30px;
   padding-bottom: 0;
@@ -52,16 +52,60 @@
   flex-direction: column;
   align-items: center;
   height: 400px;
-  width: 500px;
+  width: 100vw;
+  max-width: 500px;
+}
+
+.rocketHoverContainer {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rocketHoverTarget {
+  width: 200px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 100;
 }
 
 .rocketContainer {
   position: absolute !important;
   top: 60px !important;
+  transform: scale(1);
+  transition-duration: 1000ms;
+}
+
+.rocketHoverContainer:hover~.rocketContainer {
+  transform: scale(1.1) translateY(-50px);
+
+}
+
+.descriptionContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
 
 .description {
   text-align: center;
-  margin-top: 40px;
   font-size: 20px;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fc;
+}
+
+.video {
+  height: 300px;
+  width: 70vw;
+  max-width: 300px;
 }
